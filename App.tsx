@@ -6,7 +6,6 @@ import {
   useTouchHandler,
   useValue,
   vec,
-  useComputedValue,
 } from '@shopify/react-native-skia';
 
 import React from 'react';
@@ -40,14 +39,6 @@ export default function App() {
       touchedPoint.current = null;
     },
   });
-
-  const cx = useComputedValue(() => {
-    return touchedPoint?.current?.x ?? 1000;
-  }, [touchedPoint]);
-
-  const cy = useComputedValue(() => {
-    return touchedPoint?.current?.y ?? 1000;
-  }, [touchedPoint]);
 
   return (
     <View style={styles.container}>
