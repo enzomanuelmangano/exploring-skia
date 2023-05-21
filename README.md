@@ -7,7 +7,7 @@
 </a>
 
 What's up mobile devs?
-This is a repository where I explore the (React Native Skia)[https://github.com/Shopify/react-native-skia] package, by creating some interesting animations and UIs.
+This is a repository where I explore the [React Native Skia](https://github.com/Shopify/react-native-skia) package, by creating some interesting animations and UIs.
 If you find this repo useful, feel free to support me on [Patreon](https://www.patreon.com/reactiive).
 
 # Tutorials
