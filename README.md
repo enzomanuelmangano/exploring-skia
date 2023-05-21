@@ -1,19 +1,18 @@
 <h1 align="center">
-    Grid Magnification effect in React Native Skia 🦄
+    Exploring Skia 🦄
 </h1>
 
 <a href="https://youtu.be/zV0SGIlrtug" target="_blank">
-    <img src="https://github.com/enzomanuelmangano/skia-grid-magnification/blob/main/.assets/skia-grid.png" title="skia-grid-magnification">
+    <img src="https://github.com/enzomanuelmangano/exploring-skia/blob/main/.assets/thumbnail.png" title="exploring-skia">
 </a>
 
-[Check out the video tutorial!](https://youtu.be/zV0SGIlrtug)
+What's up mobile devs?
+This is a repository where I explore the (React Native Skia)[https://github.com/Shopify/react-native-skia] package, by creating some interesting animations and UIs.
+If you find this repo useful, feel free to support me on [Patreon](https://www.patreon.com/reactiive).
 
-## Inspiration
+# Tutorials
 
-- [Philip Davis' Tweet](https://twitter.com/philipcdavis/status/1549409119131488256?s=20&t=PmMsvQBgsruGVeAtooeLcA)
+Every source code is fully explained in the following tutorials:
 
-## Does this sound interesting?
-
-Then I suggest you check out my [YouTube](https://www.youtube.com/c/Reactiive) channel. I create React Native contents and continually update a series on Reanimated called ["Animate with Reanimated"](https://github.com/enzomanuelmangano/animate-with-reanimated).
-
-Do you want to support me? [Buymeacoffee](https://www.buymeacoffee.com/reactiive)
+- [Skia Grid Magnification](https://youtu.be/zV0SGIlrtug)
+- [Metaball Animation](https://youtu.be/HOxZegqnDC4)
