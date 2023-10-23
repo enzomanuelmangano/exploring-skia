@@ -16,3 +16,4 @@ Every source code is fully explained in the following tutorials:
 
 - [Skia Grid Magnification](https://youtu.be/zV0SGIlrtug)
 - [Metaball Animation](https://youtu.be/HOxZegqnDC4)
+- [Animated Linear Gradient Animation](https://youtu.be/ZSPvvGU2LBg)
