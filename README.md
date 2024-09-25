@@ -18,4 +18,4 @@ Every source code is fully explained in the following tutorials:
 - [Metaball Animation](https://youtu.be/HOxZegqnDC4)
 - [Animated Linear Gradient Animation](https://youtu.be/ZSPvvGU2LBg)
 - [Animated ActivityIndicator/Loader](https://youtu.be/7pCiGUrJuow)
-- [Skia BlurCards](https://youtu.be/7pCiGUrJuow)
+- [Skia BlurCards](https://youtu.be/SveA2QjmEzM)
