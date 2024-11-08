@@ -1,42 +1,48 @@
-import { StatusBar, Text, View, useWindowDimensions } from 'react-native';
+import { StatusBar, useWindowDimensions } from 'react-native';
 import React, { useMemo } from 'react';
 import {
   Blur,
-  Canvas,
   Circle,
   ColorMatrix,
   Group,
   Paint,
   SweepGradient,
-  runSpring,
-  useValue,
   vec,
 } from '@shopify/react-native-skia';
+import { useSharedValue, withSpring } from 'react-native-reanimated';
 import Touchable, { useGestureHandler } from 'react-native-skia-gesture';
+import { gestureHandlerRootHOC } from 'react-native-gesture-handler';
 
 const RADIUS = 80;
 
-export default function App() {
+function App() {
   const { width: windowWidth, height: windowHeight } = useWindowDimensions();
 
-  const cx = useValue(windowWidth / 2);
-  const cy = useValue(windowHeight / 2);
+  const cx = useSharedValue(windowWidth / 2);
+  const cy = useSharedValue(windowHeight / 2);
 
-  const gestureHandler = useGestureHandler<{
-    x: number;
-    y: number;
-  }>({
-    onStart: (_, context) => {
-      context.x = cx.current;
-      context.y = cy.current;
+  const context = useSharedValue({
+    x: 0,
+    y: 0,
+  });
+
+  const gestureHandler = useGestureHandler({
+    onStart: () => {
+      'worklet';
+      context.value = {
+        x: cx.value,
+        y: cy.value,
+      };
     },
-    onActive: ({ translationX, translationY }, context) => {
-      cx.current = translationX + context.x;
-      cy.current = translationY + context.y;
+    onActive: ({ translationX, translationY }) => {
+      'worklet';
+      cx.value = translationX + context.value.x;
+      cy.value = translationY + context.value.y;
     },
     onEnd: () => {
-      runSpring(cx, windowWidth / 2);
-      runSpring(cy, windowHeight / 2);
+      'worklet';
+      cx.value = withSpring(windowWidth / 2);
+      cy.value = withSpring(windowHeight / 2);
     },
   });
 
@@ -80,3 +86,7 @@ export default function App() {
     </>
   );
 }
+
+const AppContainer = gestureHandlerRootHOC(App);
+
+export default AppContainer;
