@@ -15,7 +15,7 @@ If you find this repo useful, feel free to support me on [Patreon](https://www.p
 Every source code is fully explained in the following tutorials:
 
 - [Skia Grid Magnification](https://youtu.be/zV0SGIlrtug)
-- [Metaball Animation](https://youtu.be/HOxZegqnDC4)
+- Metaball Animation: [YouTube Tutorial](https://youtu.be/HOxZegqnDC4) & [Written Article](https://reactiive.io/articles/metaball)
 - [Animated Linear Gradient Animation](https://youtu.be/ZSPvvGU2LBg)
 - [Animated ActivityIndicator/Loader](https://youtu.be/7pCiGUrJuow)
 - [Skia BlurCards](https://youtu.be/SveA2QjmEzM)
